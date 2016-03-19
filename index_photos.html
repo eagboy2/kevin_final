@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+    } 
+</style>
+    <title>Photos</title>
+</head>
+<body>
+    <h1>Photographs</h1>
+     <nav id="menu">
+            <a class="home"   href="index.html">Home</a>
+            <a class="photos" href="index_photos.html">Photos</a>
+            <a class="videos" href="index_videos.html">Storyboard</a>
+            <a class="design" href="index_design.html">Design</a>
+     </nav> 
+        <div id="pictures" class="gallery">
+            
+            <div class="clips">
+                    <img  class="fancybox" src="img/1_300x300.jpg">
+                    <h2>Crater Lake</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/2_300x300.jpg" > 
+                    <h2>Crater Lake</h2>    
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/3_300x300.jpg" >
+                    <h2>Hunigton Beach</h2>    
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/4_300x300.jpg" >
+                    <h2>Downtown LA</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/5_300x300.jpg" > 
+                   <h2>Santa Fe Springs</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/6_300x300.jpg" > 
+                    <h2>Downtown LA</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/7_300x300.jpg" >
+                    <h2>Downtown LA</h2>
+            </div>
+
+            <div class="clips">
+                    <img class="fancybox" src="img/8_300x300.jpg" > 
+                    <h2>Downtown LA</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/9_300x300.jpg" > 
+                    <h2>Downtown LA</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/10_300x300.jpg" > 
+                    <h2>Downtown LA</h2>    
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/11_300x300.jpg" > 
+                   <h2> North Italy</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/12_300x300.jpg" > 
+                    <h2>North Italy</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/13_300x300.jpg" > 
+                    <h2>North Italy</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/14_300x300.jpg" > 
+                    <h2> North Italy</h2>
+            </div>
+            <div class="clips">
+                    <img class="fancybox" src="img/15_300x300.jpg" > 
+                    <h2>Renaissance Fair</h2>
+            </div>
+            
+            <div id="textbox1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, sed eveniet. Optio, dignissimos facere adipisci commodi, nobis hic voluptatibus sint ex, cum ea amet unde dolorum reiciendis. Debitis, autem, at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, sed eveniet. Optio, dignissimos facere adipisci commodi, nobis hic voluptatibus sint ex, cum ea amet unde dolorum reiciendis. Debitis, autem, at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, sed eveniet. Optio, dignissimos facere adipisci commodi, nobis hic voluptatibus sint ex, cum ea amet unde dolorum reiciendis. Debitis, autem, at.</p>
+            </div>
+            
+        
+        </div> 
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    
+function mouse_over(){
+            $(this).find('h2').stop().animate({'opacity':'1','top':'100px'},500)
+            $(this).find('img').stop().animate({'opacity':'.2'},1000)
+
+    }
+function mouse_out(){
+            $(this).find('h2').stop().animate({'opacity':'0','top':'0px'},500)
+            $(this).find('img').stop().animate({'opacity':'1'},1000)
+    }
+     
+        $('.clips, img').hover(mouse_over,mouse_out); 
+        $('h2').hover(mouse_over,mouse_out); 
+
+    
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+
+</script>
+
+
+</body>
+</html>

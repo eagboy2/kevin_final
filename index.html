@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+    <title>Kevin's Gallery</title>
+</head>
+<body>
+
+        
+
+        <div id="container">
+        
+            
+            <div id="foreground">
+
+                    <nav id="menu">
+                        <a class="home"   href="index.html">Home</a>
+                        <a class="photos" href="index_photos.html">Photos</a>
+                        <a class="videos" href="index_videos.html">Storyboard</a>
+                        <a class="design" href="index_design.html">Design</a>
+                    </nav> 
+
+                    <div class="target">
+                    <img src="img/canimage.jpg" height="1000" width="980" alt="">
+                    
+                        
+                    </div>
+
+                <div id="textbox1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe optio, ducimus beatae atque. Aspernatur aut necessitatibus quidem et! Saepe harum, tempora impedit quis sint fuga accusamus fugiat mollitia officiis reiciendis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe optio, ducimus beatae atque. Aspernatur aut necessitatibus quidem et! Saepe harum, tempora impedit quis sint fuga accusamus fugiat mollitia officiis reiciendis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ea assumenda unde cupiditate suscipit quisquam aperiam delectus impedit esse, soluta, provident, facere maxime aliquam dolorem nam non voluptate. Inventore, itaque!</p>
+                </div>
+
+            </div>
+
+                
+            
+            <div id="image">
+            <h1 id="title_header"> Kevin's Gallery</h1>
+                <img src="img/package.png" height="400" width="1000" alt="">
+            </div>
+
+
+            
+
+        </div>   
+
+       
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    
+    
+    
+    <script>
+         function ajax_photos(event){
+            event.preventDefault();
+            $('#foreground .target').load('index_photos.html #pictures');
+        }
+        $('#foreground nav.menu a.photos').click(ajax_photos);
+        
+        console.log(ajax_photos);
+    
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+body{
+	background-color: #555858;
+	height:1000px;
+	background-image: url(../img/lakeblur.JPG);
+	
+	background-size:200%;
+	 background-repeat: repeat-y;
+}
+
+#container{
+			background-image: url(../img/lakeblur.JPG);
+			background-repeat: no-repeat;
+			background-size:200%;
+			background:;
+			padding:40px;
+			height:1000px;
+			position:relative;
+			overflow: scroll;
+			margin:auto;
+			z-index: 0;
+
+}
+
+nav a{
+	background-color:#FFFFFF ;
+	font-size: 20px;
+	padding:10px;
+	margin-left:30px;
+	top:10px;
+	border-radius: 10px;
+	border:solid 5px #679CFF;
+	text-decoration: none;
+	color:blue;
+
+}
+#menu {margin-left: 230px;
+}
+
+#foreground{
+	background-color:#ADB3B3;
+	width:970px ;
+	height:1350px ;
+	left:191px;
+	top: 430px;
+	position:absolute;
+	z-index:1;
+	border:solid 15px #FFFFFF;
+
+
+
+}
+#image{
+	width: 1000px;
+	position:fixed;
+	left:199px;
+
+}
+
+
+
+#title_header{
+	position:absolute;
+	z-index: 1;
+	left:390px;
+	top:200px;
+}
+
+#menu a:hover{
+	background-color: #44FFF7;
+
+
+}
+a:visited{
+	color:blue;
+}
+
+p{
+	width: 200px;
+	background-color: #fff;
+	margin-top:30px;
+	margin-left:15px;
+	padding: 30px;
+	float:left;
+	box-shadow: 20px 20px 20px #4E4E4E;
+}
+#textbox1{
+	margin-left: 40px;
+
+}
+
+
+.gallery{
+position:relative;
+width:908px;
+height:2500px;
+padding:0px;
+margin:auto;
+background-color: grey;
+border:solid 15px #FFFFFF;
+overflow:scroll;
+
+}
+
+h1{
+	text-align:center;
+	padding-top:60px;
+	color: white;
+	 text-shadow: 2px 2px #DF2A2D;
+
+}
+h2{
+	color:white;
+	
+}
+
+.boxes{
+	box-shadow: 20px 20px 10px #4E4E4E;
+}
+.boxes img{
+	float: left;
+	
+
+}
+#slide1 {
+	
+	float:left;
+	padding:0px;
+	position:relative;
+	overflow: hidden;
+	border:solid 10px white;
+	height:600px;
+	width:890px;
+}
+
+#slide1 .sliding{
+	position:absolute;
+	left:890px;
+	top:0px;
+
+}
+
+
+#slide1 .one{left:0px;} 
+
+#slide1 .sliding img{
+	display:block;
+}
+
+#slide1 .sliding h2{
+	position: absolute;
+	left:0px ;
+	bottom:0px;
+	right:0px;
+	padding:5px;
+	text-align: center;
+	margin:0px;
+	background-color:#BCBCBC;
+	background-color:rgba(188, 188, 188, 0.54);
+}
+
+#slide2 img{
+	position: absolute;
+	margin-top: 280px;
+	border:solid 10px white;
+	
+
+
+
+}
+#slide2{
+	position:absolute;
+
+
+}
+
+
+
+
+#sb1{margin-left:420px; margin-top:30px;
+	box-shadow: 20px 20px 10px #4E4E4E;
+
+
+}
+
+
+#sb2{margin-left:420px; margin-top:650px;
+	box-shadow: 20px 20px 10px #4E4E4E;
+}
+
+#title1{
+	position:absolute;
+	top:780px;
+	left:70px;
+	color:white;
+	font-size:40px;
+
+}
+#title2{
+	position:absolute;
+	top:1980px;
+	left:70px;
+	color:white;
+	font-size:40px;
+
+}
+
+.container{
+	width:900px;
+	height: 200px;
+	
+}
+.clips{
+	width:300px;
+	height:300px;
+	float:left;
+	position:relative;
+
+}
+.clips h2{
+	position: absolute;
+	left:80px;right:0px;top:30px;
+	opacity: 0;
+	
+
+}
+
+.target{
+	margin-top:30px;
+	overflow:scroll;
+}
+
+
+.click{
+	float:left;
+}
+
+#imageClick{
+	margin-left:120px;
+
+}	
+
+
+.click img{
+	margin:10px;
+	background-color: #FFFFFF;
+	padding:40px;
+	cursor: pointer;
+
+
+}
+.click h2{
+	text-align: center;
+}
+.logoBig{
+	margin-left:230px;
+	margin-top:30px;
+}
+
+#lightbox .photo{
+	position: fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom: 0px;
+
+	
+	padding:15px;
+	border-radius: 10px;
+	width:600px;
+	height:600px;
+	margin:auto;
+
+	background-color:#fff;
+}
+#lightbox{
+	background-color: rgba(0,0,0,.7);
+	display:none;
+	position: fixed;
+	top:0px;
+	bottom: 0px;
+	left:0px;
+	right:0px;
+}
+#lightbox .inner .close{
+	position:absolute;
+	padding: 5px;
+	background-color: black;
+	border-radius: 5px;
+	color:white;
+	right:415px;
+	top:55px;
+	z-index:1;	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
